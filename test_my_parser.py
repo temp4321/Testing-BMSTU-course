@@ -1,11 +1,3 @@
-import os
-import matplotlib as mpl
-if os.environ.get('DISPLAY','') == '':
-    print('no display found. Using non-interactive Agg backend')
-    mpl.use('Agg')
-import matplotlib.pyplot as plt
-
-
 from my_parser import *
 from unittest import TestCase
 from unittest.mock import patch, mock_open
